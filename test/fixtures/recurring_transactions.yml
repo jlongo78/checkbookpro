@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  start_date: 2013-03-10
+  frequency: 1
+  unit: 1
+  last_processed: 2013-03-10
+
+two:
+  start_date: 2013-03-10
+  frequency: 1
+  unit: 1
+  last_processed: 2013-03-10

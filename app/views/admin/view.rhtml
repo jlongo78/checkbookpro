@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <script src="/js/codebase/dhtmlxcommon.js"
+          type="text/javascript" charset="utf-8"></script>
+  <script src="/js/codebase/dhtmlxgrid.js"
+          type="text/javascript" charset="utf-8"></script>
+  <script src="/js/codebase/dhtmlxgridcell.js"
+          type="text/javascript" charset="utf-8"></script>
+
+  <link rel="stylesheet"
+        href="/js/codebase/dhtmlxgrid.css"
+        type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="/js/codebase/skins/dhtmlxgrid_dhx_skyblue.css" type="text/css" media="screen"
+        charset="utf-8">
+</head>
+<body>
+<div id="grid_here" style="width:600px; height:400px;">
+</div>
+<script type="text/javascript" charset="utf-8">
+    var grid = new dhtmlXGridObject("grid_here");
+    grid.setImagePath("/js/imgs/");
+    grid.setHeader("First name, Last name, Phone");
+    grid.setInitWidths("100,100,*");
+    grid.setSkin("dhx_skyblue");
+    grid.init();
+    grid.load("/users/data"); //added !
+</script>
+<input type="button" value="Add" onclick="grid.addRow(grid.uid(),'new user')">
+<input type="button" value="Delete" onclick="grid.deleteSelectedRows()">
+</body>
+</html>

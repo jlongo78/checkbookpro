@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  type: 1
+  starting_balance: 9.99
+  modified_date: 2013-03-10 03:19:03
+  deleted: false
+  color: 1
+  order_id: 1
+
+two:
+  name: MyString
+  description: MyString
+  type: 1
+  starting_balance: 9.99
+  modified_date: 2013-03-10 03:19:03
+  deleted: false
+  color: 1
+  order_id: 1

@@ -1,4 +1,19 @@
 Checkbookpro::Application.routes.draw do
+  resources :categories
+
+
+  resources :transactions
+
+
+  resources :accounts
+
+
+  resources :users
+  resources :admin
+
+  match 'admin/view' => 'admin#view'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

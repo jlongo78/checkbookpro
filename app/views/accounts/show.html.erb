@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @account.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @account.description %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @account.type %>
+</p>
+
+<p>
+  <b>Starting balance:</b>
+  <%= @account.starting_balance %>
+</p>
+
+<p>
+  <b>Modified date:</b>
+  <%= @account.modified_date %>
+</p>
+
+<p>
+  <b>Deleted:</b>
+  <%= @account.deleted %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @account.color %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @account.order_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>
